@@ -1,66 +1,182 @@
 [
-    {
-        "rank": 1,
-        "previous_rank": 1,
-        "code": "ar",
-        "name": "Argentina",
-        "points": 1860.14,
-        "points_change": 2.34
-    },
-    {
-        "rank": 2,
-        "previous_rank": 3,
-        "code": "fr",
-        "name": "France",
-        "points": 1845.55,
-        "points_change": 5.67
-    },
-    {
-        "rank": 3,
-        "previous_rank": 2,
-        "code": "br",
-        "name": "Brazil",
-        "points": 1820.30,
-        "points_change": -3.21
-    },
-    {
-        "rank": 4,
-        "previous_rank": 4,
-        "code": "be",
-        "name": "Belgium",
-        "points": 1798.45,
-        "points_change": 0.00
-    },
-    {
-        "rank": 5,
-        "previous_rank": 6,
-        "code": "pt",
-        "name": "Portugal",
-        "points": 1750.90,
-        "points_change": 1.23
-    },
-    {
-        "rank": 6,
-        "previous_rank": 5,
-        "code": "es",
-        "name": "Spain",
-        "points": 1720.60,
-        "points_change": -2.15
-    },
-    {
-        "rank": 7,
-        "previous_rank": 7,
-        "code": "nl",
-        "name": "Netherlands",
-        "points": 1700.00,
-        "points_change": -0.50
-    },
-    {
-        "rank": 8,
-        "previous_rank": 9,
-        "code": "it",
-        "name": "Italy",
-        "points": 1680.25,
-        "points_change": 3.00
-    }
+  {
+    "rank": 1,
+    "name": "Spain",
+    "code": "ESP",
+    "points": 1877.18,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 2,
+    "name": "Argentina",
+    "code": "ARG",
+    "points": 1873.33,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 3,
+    "name": "France",
+    "code": "FRA",
+    "points": 1870,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 4,
+    "name": "England",
+    "code": "ENG",
+    "points": 1834.12,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 5,
+    "name": "Brazil",
+    "code": "BRA",
+    "points": 1760.46,
+    "change": "same",
+    "changeValue": 2,
+    "pointsChange": 0
+  },
+  {
+    "rank": 6,
+    "name": "Portugal",
+    "code": "POR",
+    "points": 1760.38,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 7,
+    "name": "Netherlands",
+    "code": "NED",
+    "points": 1756.27,
+    "change": "same",
+    "changeValue": 2,
+    "pointsChange": 0
+  },
+  {
+    "rank": 8,
+    "name": "Belgium",
+    "code": "BEL",
+    "points": 1730.71,
+    "change": "same",
+    "changeValue": 3,
+    "pointsChange": 0
+  },
+  {
+    "rank": 9,
+    "name": "Germany",
+    "code": "GER",
+    "points": 1724.15,
+    "change": "same",
+    "changeValue": 1,
+    "pointsChange": 0
+  },
+  {
+    "rank": 10,
+    "name": "Croatia",
+    "code": "CRO",
+    "points": 1716.88,
+    "change": "up",
+    "changeValue": 1,
+    "pointsChange": 0
+  },
+  {
+    "rank": 11,
+    "name": "Morocco",
+    "code": "MAR",
+    "points": 1712.01,
+    "change": "down",
+    "changeValue": 1,
+    "pointsChange": -4.33
+  },
+  {
+    "rank": 12,
+    "name": "Italy",
+    "code": "ITA",
+    "points": 1702.06,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 13,
+    "name": "Colombia",
+    "code": "COL",
+    "points": 1701.3,
+    "change": "same",
+    "changeValue": 1,
+    "pointsChange": 0
+  },
+  {
+    "rank": 14,
+    "name": "United States",
+    "code": "USA",
+    "points": 1681.88,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 15,
+    "name": "Mexico",
+    "code": "MEX",
+    "points": 1675.75,
+    "change": "same",
+    "changeValue": 4,
+    "pointsChange": 0
+  },
+  {
+    "rank": 16,
+    "name": "Uruguay",
+    "code": "URY",
+    "points": 1672.62,
+    "change": "same",
+    "changeValue": 2,
+    "pointsChange": 0
+  },
+  {
+    "rank": 17,
+    "name": "Switzerland",
+    "code": "SUI",
+    "points": 1654.69,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  },
+  {
+    "rank": 18,
+    "name": "Japan",
+    "code": "JPN",
+    "points": 1650.12,
+    "change": "up",
+    "changeValue": 1,
+    "pointsChange": 0
+  },
+  {
+    "rank": 19,
+    "name": "Senegal",
+    "code": "SEN",
+    "points": 1645.39,
+    "change": "down",
+    "changeValue": 1,
+    "pointsChange": -2.68
+  },
+  {
+    "rank": 20,
+    "name": "Iran",
+    "code": "IRN",
+    "points": 1617.02,
+    "change": "same",
+    "changeValue": 0,
+    "pointsChange": 0
+  }
 ]
