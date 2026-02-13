@@ -1,0 +1,66 @@
+[
+    {
+        "rank": 1,
+        "previous_rank": 1,
+        "code": "ar",
+        "name": "Argentina",
+        "points": 1860.14,
+        "points_change": 2.34
+    },
+    {
+        "rank": 2,
+        "previous_rank": 3,
+        "code": "fr",
+        "name": "France",
+        "points": 1845.55,
+        "points_change": 5.67
+    },
+    {
+        "rank": 3,
+        "previous_rank": 2,
+        "code": "br",
+        "name": "Brazil",
+        "points": 1820.30,
+        "points_change": -3.21
+    },
+    {
+        "rank": 4,
+        "previous_rank": 4,
+        "code": "be",
+        "name": "Belgium",
+        "points": 1798.45,
+        "points_change": 0.00
+    },
+    {
+        "rank": 5,
+        "previous_rank": 6,
+        "code": "pt",
+        "name": "Portugal",
+        "points": 1750.90,
+        "points_change": 1.23
+    },
+    {
+        "rank": 6,
+        "previous_rank": 5,
+        "code": "es",
+        "name": "Spain",
+        "points": 1720.60,
+        "points_change": -2.15
+    },
+    {
+        "rank": 7,
+        "previous_rank": 7,
+        "code": "nl",
+        "name": "Netherlands",
+        "points": 1700.00,
+        "points_change": -0.50
+    },
+    {
+        "rank": 8,
+        "previous_rank": 9,
+        "code": "it",
+        "name": "Italy",
+        "points": 1680.25,
+        "points_change": 3.00
+    }
+]
