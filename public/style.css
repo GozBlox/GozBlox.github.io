@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1f2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a3344;
+    border-radius: 30px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.screen.active {
+    display: flex;
+}
+
+h1, h2 {
+    color: #e9eef2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #1f2a3a;
+}
+
+button {
+    background-color: #3b4b62;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.2s;
+    box-shadow: 0 5px 0 #1f2a3a;
+}
+
+button:hover {
+    background-color: #4e627f;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #1f2a3a;
+}
+
+input, select {
+    background-color: #1f2a3a;
+    border: 2px solid #3b4b62;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aab8c5;
+}
+
+#playerList {
+    background-color: #1f2a3a;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    margin: 20px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.player-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #2a3749;
+    border-radius: 30px;
+}
+
+.player-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.player-name {
+    flex: 1;
+    font-weight: bold;
+}
+
+.player-ready {
+    background-color: #4caf50;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Game canvas */
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #111;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #2a3344;
+}
+
+#gameUI {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+}
+
+#timer, #playersLeft, #roleDisplay {
+    display: inline-block;
+}
+
+/* Mobile joystick */
+#joystickZone {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 60px;
+    display: none;
+    touch-action: none;
+    z-index: 20;
+}
+
+.mobile #joystickZone {
+    display: block;
+}
+
+#joystick {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 25px;
+    top: 35px;
+    left: 35px;
+    transition: transform 0.01s;
+}
+
+/* Desktop controls hint */
+.desktop #controlsInfo::after {
+    content: "WASD or Arrow Keys to move";
+}
+
+.mobile #controlsInfo::after {
+    content: "Use the on-screen joystick";
+}
