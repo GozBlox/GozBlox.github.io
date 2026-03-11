@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Hide & Seek - Among Us Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Menu -->
+    <div id="mainMenu" class="screen active">
+        <h1>HIDE & SEEK</h1>
+        <button id="hostBtn">HOST GAME</button>
+        <button id="joinBtn">JOIN GAME</button>
+        <button id="howToBtn">HOW TO PLAY</button>
+        <button id="settingsBtn">SETTINGS</button>
+    </div>
+
+    <!-- Host Menu -->
+    <div id="hostMenu" class="screen">
+        <h2>HOST GAME</h2>
+        <input type="text" id="playerNameHost" placeholder="Your name" maxlength="12" value="Host">
+        <label>Map:</label>
+        <select id="mapSelect">
+            <option value="spaceship">Spaceship</option>
+            <option value="maze">Maze</option>
+        </select>
+        <label>Max Players (2-10):</label>
+        <input type="number" id="maxPlayers" min="2" max="10" value="6">
+        <label>Hiding Time (sec):</label>
+        <input type="number" id="hidingTime" min="5" max="30" value="10">
+        <label>Round Time (sec):</label>
+        <input type="number" id="roundTime" min="60" max="300" value="120">
+        <label>Vision Distance (px):</label>
+        <input type="number" id="visionDistance" min="50" max="300" value="150">
+        <label>Speed:</label>
+        <input type="number" id="speed" min="1" max="8" value="3">
+        <button id="hostConfirm">CREATE ROOM</button>
+        <button id="backFromHost">BACK</button>
+    </div>
+
+    <!-- Join Menu -->
+    <div id="joinMenu" class="screen">
+        <h2>JOIN GAME</h2>
+        <input type="text" id="playerNameJoin" placeholder="Your name" maxlength="12" value="Player">
+        <input type="text" id="roomCode" placeholder="Room Code" maxlength="4">
+        <button id="joinConfirm">JOIN</button>
+        <button id="backFromJoin">BACK</button>
+    </div>
+
+    <!-- Lobby -->
+    <div id="lobby" class="screen">
+        <h2>LOBBY <span id="roomCodeDisplay"></span></h2>
+        <div id="playerList"></div>
+        <button id="readyBtn">READY</button>
+        <button id="startGameBtn" style="display:none;">START GAME</button>
+        <button id="leaveLobbyBtn">LEAVE</button>
+    </div>
+
+    <!-- How To Play -->
+    <div id="howToPlay" class="screen">
+        <h2>HOW TO PLAY</h2>
+        <p><strong>Objective:</strong> Hiders must hide; Seeker must find everyone.</p>
+        <p><strong>Phases:</strong> Hiders get time to hide (Seeker frozen). Then Seeker searches.</p>
+        <p><strong>Controls:</strong></p>
+        <div id="controlsInfo"></div>
+        <p>Hiders win if at least one survives until timer ends.</p>
+        <button id="backFromHowTo">BACK</button>
+    </div>
+
+    <!-- Game Canvas -->
+    <div id="gameContainer" style="display:none;">
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameUI">
+            <div id="timer">00:00</div>
+            <div id="playersLeft">Hiders: 0</div>
+            <div id="roleDisplay"></div>
+        </div>
+        <!-- Mobile joystick (hidden on desktop) -->
+        <div id="joystickZone">
+            <div id="joystick"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+  </html>
